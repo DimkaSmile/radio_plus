@@ -322,4 +322,17 @@ class RadioTest {
 
         assertEquals(expected, actual);
     }
-}
+    @Test
+    public void getNewCurrentChanel() {
+        Radio cond = new Radio(20);
+
+        cond.setCurrentChanel(15);
+        int expected = 15;
+        int actual = cond.getCurrentChanel();
+
+        assertEquals(expected, actual);
+    }
+
+    }
+
+
